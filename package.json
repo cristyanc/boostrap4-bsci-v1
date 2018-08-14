@@ -80,7 +80,7 @@
     "watch-js-main": "nodemon --watch js/src/ --ext js --exec \"npm run js-compile\"",
     "watch-js-docs": "nodemon --watch site/docs/4.1/assets/js/src/ --ext js --exec \"npm run js-docs\""
   },
-  "style": "dist/css/bootstrap.css",
+  "style": "docs/4.1/dist/css/bootstrap.css",
   "sass": "scss/bootstrap.scss",
   "main": "dist/js/bootstrap",
   "repository": {
@@ -104,6 +104,7 @@
     "babel-eslint": "^8.2.5",
     "babel-plugin-istanbul": "^4.1.6",
     "broken-link-checker": "^0.7.8",
+    "browser-sync": "^2.24.6",
     "bundlesize": "^0.15.3",
     "clean-css-cli": "^4.1.11",
     "coveralls": "^3.0.2",
