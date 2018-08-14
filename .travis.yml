@@ -6,7 +6,7 @@ language: node_js
 git:
   depth: 3
 node_js:
-  - "6"
+  #- "6"
   - "8"
 before_install:
   - if [[ `npm -v` != 5* ]]; then npm install -g npm@5; fi
@@ -31,3 +31,11 @@ cache:
   directories:
     - node_modules
     - vendor/bundle
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: 50299ba6493fada848986b0c0ca5f4a1148eb6c9  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master
